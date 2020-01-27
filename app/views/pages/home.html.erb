@@ -1,6 +1,12 @@
-<div class="about-image">
-  <%= image_tag "travelpin.jpg", alt: "alttext" %>
+<div class="pad">
 </div>
 <div class="about-image">
-  <%= image_tag "skuter2.jpg", alt: "alttext" %>
+  <%= link_to travelpin_path do  %>
+    <%= image_tag "travelpin.jpg", alt: "alttext" %>
+  <% end %>
+ </div>
+<div class="about-image">
+  <%= link_to skuter_path do %>
+    <%= image_tag "skuter2.jpg", alt: "alttext" %>
+  <% end %>
 </div>
