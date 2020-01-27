@@ -1,1 +1,15 @@
+.travelpin-image {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.travelpin-image img {
+  height: auto;
+  width: 80%;
+  object-fit: cover;
+  margin-bottom: calc(10vw)
+}
