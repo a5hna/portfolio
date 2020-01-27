@@ -1,5 +1,24 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon d-flex justify-content-center align-items-center">
-  <%= link_to "#", class: "navbar-brand" do %>
-    ASHNA SHAH
-  <% end %>
+
+<div class="pos-f-t">
+  <nav class="navbar navbar-dark">
+    <p class="float-left m-0">ASHNA SHAH</p>
+    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-grip-lines"></i>
+    </button>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="navigation text-center d-flex flex-column justify-content-center">
+      <%= link_to root_path do  %>
+        <h3>Work</h3>
+      <% end %>
+
+      <%= link_to about_path do  %>
+        <h3>About</h3>
+      <% end %>
+
+      <%= link_to contact_path do  %>
+        <h3>Contact</h3>
+      <% end %>
+    </div>
+  </div>
 </div>

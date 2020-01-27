@@ -1,0 +1,27 @@
+.about-image {
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-image img {
+  height: 80%;
+  width: 80%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.about-text {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text p {
+  width: 80%;
+
+}
