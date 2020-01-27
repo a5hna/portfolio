@@ -9,7 +9,7 @@
 
 .about-image img {
   height: auto;
-  width: 80%;
+  width: 90%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: calc(10vw)
@@ -18,12 +18,18 @@
 
 .about-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .about-text p {
-  width: 80%;
+  width: 90%;
 
+}
+
+.about-text h3 {
+  width: 90%;
 }
 
 .about-image a {
