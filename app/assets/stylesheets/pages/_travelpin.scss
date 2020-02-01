@@ -9,7 +9,12 @@
 
 .travelpin-image img {
   height: auto;
-  width: 80%;
+  width: 60%;
   object-fit: cover;
   margin-bottom: calc(10vw)
+}
+
+
+.carousel-indicators li {
+  background-color: black;
 }

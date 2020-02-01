@@ -29,7 +29,9 @@ body {
 .portfolio-image h6 {
   width: 90%;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  font-size: 26px;
+  font-weight: 400;
   // text-align: center;
 }
 
@@ -61,4 +63,21 @@ body {
 
 .chev-text {
   color: black;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text p {
+  width: 90%;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.contact-text p {
+  width: 90%;
 }
