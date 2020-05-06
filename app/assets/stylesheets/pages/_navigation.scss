@@ -1,7 +1,14 @@
 .navigation {
-  height: calc(100vh - 60px);
+  height: calc(90vh - 60px);
   background-color: white;
 }
+
+.contact-links {
+  height: 10vh;
+  background: white;
+}
+
+
 
 .navigation a {
   margin-bottom: 25px;
@@ -14,4 +21,20 @@
   font-size: 25px;
   height: 25px;
   width: 25px;
+}
+
+.navcontainer {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding-left: 4vw;
+  padding-right: 4vw;
+  pointer-events: auto;
+  background-color: white;
+
+}
+
+.fa-github, .fa-linkedin-in  {
+  margin: 0px 5px;
+  color: black
 }

@@ -1,22 +1,35 @@
-<div class="pad">
+<div class="mycontainer">
+  <div class="row">
+    <div class="col-l col-12 col-md-6 float-left">
+      <div class="portfolio-image">
+        <%= link_to travelpin_path do  %>
+          <%= image_tag "travelpin.jpg", alt: "alttext" %>
+        <% end %>
+        <p>TravelPin</p>
+      </div>
+    </div>
+    <div class="col-r col-12 col-md-6">
+      <div class="portfolio-image">
+        <%= link_to skuter_path do %>
+          <%= image_tag "skuter2.jpg", alt: "alttext" %>
+        <% end %>
+        <p>Skuter</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-l col-12 col-md-6">
+      <div class="text intro-text font-weight-light">
+        <p>Ashna Shah is a passionate web and mobile application developer based in London. Her mission is to provide creative solutions to technological problems. With a key interest in design, her aesthetic is simple, clean and elegant.</p>
+      </div>
+      <%= link_to contact_path do %>
+        <p class="mt-4 work-together-link"><u>Let's work together.</u></p>
+      <% end %>
+      <div class="text contact-text mt-5">
+        <p class="mb-2">a5hna@hotmail.co.uk</p>
+        <p>+447835078360</p>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="portfolio-image">
-  <%= link_to travelpin_path do  %>
-    <%= image_tag "travelpin.jpg", alt: "alttext" %>
-  <% end %>
-  <p>TravelPin</p>
- </div>
-<div class="portfolio-image">
-  <%= link_to skuter_path do %>
-    <%= image_tag "skuter2.jpg", alt: "alttext" %>
-  <% end %>
-  <p>Skuter</p>
-</div>
-<div class="text intro-text font-weight-light">
-  <p>Ashna Shah is a passionate web and application developer based in London. With a clean and elegant aesthetic, she wants to build beautiful digital products that enhance and simplify everyday life.</p>
-  <p class="mt-4"><u>Let's work together.</u></p>
-</div>
-<div class="text contact-text mt-5">
-  <p class="mb-2">a5hna@hotmail.co.uk</p>
-  <p>+447835078360</p>
-</div>
+

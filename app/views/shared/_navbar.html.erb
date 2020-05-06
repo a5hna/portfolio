@@ -1,17 +1,23 @@
 
 <div class="pos-f-t sticky-top">
-  <nav class="navbar">
+  <div class="navcontainer">
+  <nav class="navbar p-0">
+  <%= link_to root_path do  %>
     <p class="float-left m-0 name">ASHNA SHAH</p>
-    <button class="navbar-toggler float-right caret" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+  <% end %>  
+    <button class="navbar-toggler float-right caret p-0" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
       <i class="fas fa-grip-lines caret" id="fa-grip-lines"></i>
       <i class="fas fa-grip-lines caret fa-rotate-90 d-none" id="fa-times"></i>
      <!--  <i class="fas fa-times d-none" id="fa-times"></i> -->
     </button>
   </nav>
+  </div>
+
   <script>
     function myFunction() {
       document.getElementById('fa-grip-lines').classList.toggle("d-none");
       document.getElementById('fa-times').classList.toggle("d-none");
+      // document.getElementById('pos-f-t').classList.toggle("sticky-top")
     }
   </script>
   <div class="collapse" id="navbarToggleExternalContent">
@@ -28,10 +34,15 @@
         <h3>Contact</h3>
       <% end %>
     </div>
-<!--     <div style="color: black">
+    <div style="color: black; font-size: 35px;" class="contact-links text-center">
+    <a href="https://www.linkedin.com/in/shah-ashna/" target="blank">
       <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/a5hna" target="blank">  
       <i class="fab fa-github"></i>
-    </div> -->
+    </a>  
+    </div>
   </div>
 </div>
+
 

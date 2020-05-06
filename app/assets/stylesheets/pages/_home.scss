@@ -4,8 +4,26 @@ body {
   background-color: white;
 }
 
+.mycontainer {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 3.3vw;
+  padding-bottom: 3.3vw;
+}
+
+@media only screen and (min-width: 960px) {
+  .col-l {
+    padding-right: 2vw;
+
+  }
+
+  .col-r {
+    padding-left: 2vw;
+  }
+}
+
 .portfolio-image {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -16,9 +34,10 @@ body {
 
 .portfolio-image img {
   height: auto;
-  width: 90%;
+  width: 100%;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: block;
 
 }
 
@@ -27,7 +46,7 @@ body {
 }
 
 .portfolio-image p {
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
   margin-bottom: 70px;
   font-size: 22px;
@@ -37,7 +56,7 @@ body {
 }
 
 .arrow {
-  width: 100vw;
+  // width: 100vw;
   margin-bottom: 5px;
 }
 
@@ -74,11 +93,38 @@ body {
 }
 
 .intro-text p {
-  width: 90%;
+  width: 100%;
+  font-size: 22px;
+  line-height: 33px;
+  color: black;
+
+}
+
+.contact-text p {
+  width: 100%;
+}
+
+.work-together-link {
+  color: black;
   font-size: 22px;
   line-height: 33px;
 }
 
-.contact-text p {
-  width: 90%;
+.submit-btn {
+  color: black;
+  background: white;
+  border: 3px solid black;
+  padding: 18px;
+  margin-bottom: 22px;
+  font-size: 18px;
 }
+
+.submit-btn:hover {
+  color: white;
+  background: black;
+  border: 3px solid black;
+  padding: 18px;
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+
