@@ -22,4 +22,12 @@
 
 .carousel-indicators {
   position: relative;
+  color: transparent;
+}
+
+.travelpin-carousel-text p {
+  border: 3px solid #96d1c7;
+  color: #96d1c7;
+  padding: 10px;
+  // min-height: 146px;
 }
