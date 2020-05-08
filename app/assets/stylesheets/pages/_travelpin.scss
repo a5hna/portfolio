@@ -11,8 +11,14 @@
   height: auto;
   width: 30%;
   object-fit: cover;
-  margin-bottom: calc(10vw);
+  margin-bottom: calc(6vw);
 
+}
+
+@media only screen and (max-width: 900px) {
+  .travelpin-image img {
+    width: 50%;
+  }
 }
 
 
