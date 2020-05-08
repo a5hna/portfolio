@@ -16,3 +16,36 @@
   font-size: 20px;
   color: black;
 }
+
+ .horizontal-nav {
+   color: black;
+   h5 {
+    float: left;
+    margin: 0px 10px;
+    color: black;
+   }
+
+   a {
+     display: flex;
+     align-items: center;
+   }
+
+   i {
+     font-size: 22px;
+   }
+
+ }
+
+@media only screen and (max-width: 700px) {
+  .horizontal-nav {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .navbar-toggler  {
+    display: none !important;
+  }
+}
+
+
