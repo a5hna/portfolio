@@ -60,12 +60,13 @@ $(window).resize(function(){
   <div class="col-12 col-md-6 cl">
     <div class="home-image lilac">
       <div style="height: 90%" class="d-flex align-items-center justify-content-center">
-      <h5 class="intro">Hi, I'm Ashna, a full stack web and mobile application developer based in London. With a key interest in design, I love finding beautiful, creative solutions to technological problems.</h5>
+      <h5 class="intro">Hello World. I'm <span class="ashna">Ashna</span>, a full stack web and mobile application developer based in London. With a key interest in design, I love finding beautiful, creative solutions to technological problems.</h5>
       </div>
-      <div class="mb-2" style="height: 10%">
+      <div class="mb-2 d-flex flex-column align-items-center justify-content-center" style="height: 10%; color: white">
       <a href="" class="scroll-next" style="color: white; font-size: 25px">
         <i class="fas fa-chevron-circle-down"></i>
-      </a>  
+      </a>
+      <p style="font-size: 10px">See my work</p>    
       </div>
     </div>
   </div>
@@ -75,24 +76,41 @@ $(window).resize(function(){
     </div>
   </div>
 </div>
+</div>
+
+<div class="full-height-container no-gutters">
+<div class="row ">
+  <div class="col-12 col-md-6 cl">
+    <div class="home-image">
+      <%= link_to travelpin_path do  %>
+        <%= image_tag "TravelPin.png", alt: "alttext" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 cr">
+    <div class="home-image">
+      <%= image_tag "skuter.png", alt: "alttext" %>
+    </div>
+  </div>
+</div>
 </div> 
 
-<div class="mycontainer">
+<%# <div class="mycontainer">
   <div class="row">
     <div class="col-l col-12 col-md-6 float-left">
-      <div class="portfolio-image">
-        <%= link_to travelpin_path do  %>
-          <%= image_tag "travelpin.jpg", alt: "alttext" %>
-        <% end %>
-        <p>TravelPin</p>
+      <div class="portfolio-image"> %>
+        <%#= link_to travelpin_path do  %>
+          <%# <%= image_tag "travelpin.png", alt: "alttext" %>
+        <%# end %>
+        <%# <p>TravelPin</p>
       </div>
     </div>
     <div class="col-r col-12 col-md-6">
-      <div class="portfolio-image">
-        <%= link_to skuter_path do %>
-          <%= image_tag "skuter2.jpg", alt: "alttext" %>
-        <% end %>
-        <p>Skuter</p>
+      <div class="portfolio-image"> %>
+        <%#= link_to skuter_path do %>
+          <%#= image_tag "skuter.jpg", alt: "alttext" %>
+        <%# end %>
+        <%# <p>Skuter</p>
       </div>
     </div>
   </div>
@@ -100,15 +118,15 @@ $(window).resize(function(){
     <div class="col-l col-12 col-md-6">
       <div class="text intro-text font-weight-light">
         <p>Ashna Shah is a passionate web and mobile application developer based in London. Her mission is to provide creative solutions to technological problems. With a key interest in design, her aesthetic is simple, clean and elegant.</p>
-      </div>
-      <%= link_to contact_path do %>
-        <p class="mt-4 work-together-link"><u>Let's work together.</u></p>
-      <% end %>
-      <div class="text contact-text mt-5">
+      </div> %>
+      <%#= link_to contact_path do %>
+        <%# <p class="mt-4 work-together-link"><u>Let's work together.</u></p> %>
+      <%# end %>
+      <%# <div class="text contact-text mt-5">
         <p class="mb-2">a5hna@hotmail.co.uk</p>
         <p>+447835078360</p>
       </div>
     </div>
   </div>
-</div>
+</div>  %>
 

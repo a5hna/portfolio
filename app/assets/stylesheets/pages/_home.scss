@@ -163,6 +163,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 @media (orientation: landscape) {
@@ -217,6 +218,43 @@ body {
 
 .scroll-next {
   font-size: 30px;
-  margin-bottom: 3.3vw;
+  // margin-bottom: 3.3vw;
 }
 
+.scroll-next:hover {
+  color: rgb(110, 130, 221);
+}
+
+.ashna {
+  // font-size: 1.5em;
+  color: #5b577c;
+  font-weight: bolder;
+  padding: 1px;
+  margin: 2px;
+  background: lightblue;
+  line-height: 26px;
+}
+
+.ashna:hover {
+  color:black;
+  font-weight: bolder;
+  background: rgb(110, 130, 221);
+}
+
+@media only screen and (max-width: 760px) {
+  .intro {
+    width: 70%;
+  }
+}
+
+// @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+//   html {
+//     transform: rotate(-90deg);
+//     transform-origin: left top;
+//     width: 100vh;
+//     overflow-x: hidden;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//   }
+// }
