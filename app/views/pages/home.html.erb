@@ -1,3 +1,82 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+// The resize function
+function resize() {
+  var vheight = $(window).height();
+  var vwidth = $(window).width();
+  $('.fullsize-background').css({
+    'height': vheight,
+    'width': vwidth 
+  });
+};
+
+// The scroll-up function
+// function scrollUp() {
+//   var vheight = $(window).height();
+//   $('html, body').animate({
+//     scrollTop: (Math.ceil($(window).scrollTop() / vheight)-1) * vheight
+//   }, 500);
+// };
+
+// The scroll-down function
+function scrollDown() {
+  var vheight = $(window).height();
+  $('html, body').animate({
+    scrollTop: (Math.floor($(window).scrollTop() / vheight)+1) * vheight
+  }, 500);  
+};
+
+// Do stuff when document is ready
+$(document).ready(function(){
+  
+  // Resize Container Function
+  resize();
+  
+  // Click to Scroll DOWN Functions
+  $('.scroll-next').click(function(event){
+    scrollDown();
+    event.preventDefault();
+  });
+  
+  // Click to Scroll UP Functions
+  $('.scroll-prev').click(function(event){
+    scrollUp();
+    event.preventDefault();
+  });
+  
+});
+
+// Resize Container on window resize
+$(window).resize(function(){
+  
+  resize();
+  
+});
+</script>
+
+<div class="full-height-container no-gutters">
+<div class="row ">
+  <div class="col-12 col-md-6 cl">
+    <div class="home-image lilac">
+      <div style="height: 90%" class="d-flex align-items-center justify-content-center">
+      <h5 class="intro">Hi, I'm Ashna, a full stack web and mobile application developer based in London. With a key interest in design, I love finding beautiful, creative solutions to technological problems.</h5>
+      </div>
+      <div class="mb-2" style="height: 10%">
+      <a href="" class="scroll-next" style="color: white; font-size: 25px">
+        <i class="fas fa-chevron-circle-down"></i>
+      </a>  
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 cr">
+    <div class="home-image">
+      <%= image_tag "ashna2.JPG", alt: "alttext" %>
+    </div>
+  </div>
+</div>
+</div> 
+
 <div class="mycontainer">
   <div class="row">
     <div class="col-l col-12 col-md-6 float-left">
