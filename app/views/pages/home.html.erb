@@ -85,12 +85,20 @@ $(window).resize(function(){
       <%= link_to travelpin_path do  %>
         <%= image_tag "TravelPin.png", alt: "alttext" %>
       <% end %>
+      <div class="overlay">
+        <div class="text">TravelPin</div>
+      </div>
     </div>
   </div>
   <div class="col-12 col-md-6 cr">
     <div class="home-image">
+    <%= link_to skuter_path do  %>
       <%= image_tag "skuter.png", alt: "alttext" %>
-    </div>
+    <% end %>  
+    <div class="overlay">
+      <div class="text">Skuter</div>
+    </div> 
+    </div>   
   </div>
 </div>
 </div> 
