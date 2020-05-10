@@ -71,8 +71,11 @@ $(window).resize(function(){
     </div>
   </div>
   <div class="col-12 col-md-6 cr">
-    <div class="home-image">
+    <div class="home-image ashna-pic">
       <%= image_tag "ashna2.JPG", alt: "alttext" %>
+      <div class="sideoverlay">
+        <div class="sidetext">After completing an undergraduate degree in Mathematics, I worked as a Data Analyst for 2 years before deciding to pursue a career in Tech. Through self learning and attending a Full Stack Web Development Bootcamp in Bali, I learnt to code and gained the skills necessary to become a developer. Fast-forward back to London, I am currently working as a Junior iOS & Android App Developer within the PropTech sector.</div>
+      </div>
     </div>
   </div>
 </div>
@@ -85,19 +88,23 @@ $(window).resize(function(){
       <%= link_to travelpin_path do  %>
         <%= image_tag "TravelPin.png", alt: "alttext" %>
       <% end %>
+      <%= link_to travelpin_path do  %>
       <div class="overlay">
         <div class="text">TravelPin</div>
       </div>
+      <% end %>
     </div>
   </div>
   <div class="col-12 col-md-6 cr">
     <div class="home-image">
     <%= link_to skuter_path do  %>
       <%= image_tag "skuter.png", alt: "alttext" %>
-    <% end %>  
+    <% end %>
+    <%= link_to skuter_path do  %>
     <div class="overlay">
       <div class="text">Skuter</div>
-    </div> 
+    </div>
+    <% end %> 
     </div>   
   </div>
 </div>
