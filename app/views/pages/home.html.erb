@@ -1,4 +1,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="confetti.js"></script>
+<script>
+  // $(document).ready(function(){
+    $('.ashna').click(function(event){
+    confetti.start();
+  });
+//  }
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('.see-my-work').delay(8000).show(0)
+  }
+</script>
 
 <script>
 // The resize function
@@ -62,7 +76,7 @@ $(window).resize(function(){
       <div style="height: 90%" class="d-flex align-items-center justify-content-center">
       <h5 class="intro">Hello World. I'm <span class="ashna">Ashna</span>, a full stack web and mobile application developer based in London. With a key interest in design, I love finding beautiful, creative solutions to technological problems.</h5>
       </div>
-      <div class="mb-2 d-flex flex-column align-items-center justify-content-center" style="height: 10%; color: white">
+      <div class="mb-2 d-flex flex-column align-items-center justify-content-center see-my-work" style="height: 10%; color: white">
       <a href="" class="scroll-next" style="color: white; font-size: 25px">
         <i class="fas fa-chevron-circle-down"></i>
       </a>
@@ -72,6 +86,7 @@ $(window).resize(function(){
   </div>
   <div class="col-12 col-md-6 cr">
     <div class="home-image ashna-pic">
+      <%# <i class="fas fa-chevron-right float-left d-flex align-items-center" style="position: absolute"></i> %>
       <%= image_tag "ashna2.JPG", alt: "alttext" %>
       <div class="sideoverlay">
         <div class="sidetext">After completing an undergraduate degree in Mathematics, I worked as a Data Analyst for 2 years before deciding to pursue a career in Tech. Through self learning and attending a Full Stack Web Development Bootcamp in Bali, I learnt to code and gained the skills necessary to become a developer. Fast-forward back to London, I am currently working as a Junior iOS & Android App Developer within the PropTech sector.</div>
